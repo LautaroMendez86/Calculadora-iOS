@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form name="calculadora">
+
+        <input type="textfield" class="col-4" autocomplete="off" name="input" value="" readonly placeholder="0">
+
+        <input type="reset" class="button greey" value="c">
+        <input type="button" class="button greey" value="+/-" onclick="document.calculadora.input.value+='-'">
+        <input type="button" class="button greey" value="%" onclick="document.calculadora.input.value+='%'">
+        <input type="button" class="button yellow" value="/" onclick="document.calculadora.input.value+='/'">
+
+        <input type="button" class="button dark" value="7" onclick="document.calculadora.input.value+='7'">
+        <input type="button" class="button dark" value="8" onclick="document.calculadora.input.value+='8'">
+        <input type="button" class="button dark" value="9" onclick="document.calculadora.input.value+='9'">
+        <input type="button" class="button yellow" value="X" onclick="document.calculadora.input.value+='*'">
+
+        <input type="button" class="button dark" value="4" onclick="document.calculadora.input.value+='4'">
+        <input type="button" class="button dark" value="5" onclick="document.calculadora.input.value+='5'">
+        <input type="button" class="button dark" value="6" onclick="document.calculadora.input.value+='6'">
+        <input type="button" class="button yellow" value="-" onclick="document.calculadora.input.value+='-'">
+
+        <input type="button" class="button dark" value="1" onclick="document.calculadora.input.value+='1'">
+        <input type="button" class="button dark" value="2" onclick="document.calculadora.input.value+='2'">
+        <input type="button" class="button dark" value="3" onclick="document.calculadora.input.value+='3'">
+        <input type="button" class="button yellow" value="+" onclick="document.calculadora.input.value+='+'">
+
+        <input type="button" class="button dark col-2" value="0" onclick="document.calculadora.input.value+='0'">
+        <input type="button" class="button dark" value="," onclick="document.calculadora.input.value+=','">
+        <input type="button" class="button yellow" value="=" onclick="document.calculadora.input.value=eval(document.calculadora.input.value)">
+
+    </form>
+</div>
+</body>
+</html>
